@@ -15,9 +15,10 @@ const NavSections = ({ item }: any) => {
       break;
   }
   return (
-    <ul className="bg-white shadow-lg min-w-fit divide-y divide-[#E3E2DC] absolute top-14 hidden group-hover:block hover:block w-50 flex-col">
+    <ul className={`bg-white border border-[#D9D9D9] shadow-lg min-w-fit divide-y divide-[#E3E2DC] absolute top-14 hidden group-hover:block hover:block w-50 flex-col z-10`}>
       {sections.map((section, index) => (
-        <li key={index} className="py-2 px-3 font-normal text-base transition-all hover:bg-[#F16126] hover:text-white">{section}</li>
+        <li key={index} className="py-2 px-4 font-normal text-base transition-all hover:bg-[#F16126] hover:text-white">{section}
+        </li>
       ))}
     </ul>
   )
