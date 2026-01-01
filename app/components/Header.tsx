@@ -5,6 +5,7 @@ import Logo from "../../public/images/logo/01.png"
 import { LuMinus, LuPlus } from "react-icons/lu";
 import NavSections from "./NavSections";
 import { useEffect, useState } from "react";
+import Container from "./Container";
 
 const Header = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
@@ -20,8 +21,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="">
-      <div className="max-w-6xl mx-auto">
+    <header className="absolute w-full">
+      <Container>
         <div className="info-cta flex justify-between items-center">
           <div className="contact flex divide-x
               divide-[#E3E2DC]">
@@ -57,11 +58,10 @@ const Header = () => {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className={`main-header border-t border-[#E3E2DC] ${headerFixed && "fixed top-0 bg-[#fdfdfd73] backdrop-blur-lg w-full z-10 border-none"}`}>
-        {/* fixed w-full top-0 */}
-        <div className="max-w-6xl mx-auto">
+      <div className={`w-full main-header border-t border-[#E3E2DC] transition-all duration-300 ${headerFixed && "fixed top-0 bg-[#fdfdfd73] backdrop-blur-xl w-full z-10 border-none shadow-md"}`}>
+        <Container>
           <div className="flex items-center justify-between py-4">
             <div className="logo">
               <Image src={Logo} alt="Site Logo" objectFit="cover" />
@@ -91,7 +91,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </header>
   )

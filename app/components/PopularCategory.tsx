@@ -1,3 +1,6 @@
+import Container from "./Container"
+import Subtitle from "./Subtitle"
+
 const PopularCategory = () => {
   const categories = [{
     img: "01.jpg",
@@ -32,17 +35,18 @@ const PopularCategory = () => {
   },]
 
   return (
-    <div className="categoory-section py-28">
-      <div className="max-w-5xl mx-auto">
+    <div className="categoory-section py-28 bg-white">
+      <Container>
         <div className="header-content mb-12">
-          <span className="sub-heading text-[#F16126] letter-spacing-[1px] uppercase font-semibold tracking-[0.3em] text-lg text-center block">Popular Category</span>
-          <h2 className="text-center text-4xl font-bold my-4">Popular Category For Learn</h2>
+          <Subtitle text="Popular Category" className="text-center" />
+          <h2 className="text-center text-[40px] font-bold my-4">Popular Category For Learn</h2>
         </div>
-        <div className="cards flex gap-2">
+        <div className="cards flex wrap gap-2">
           {categories.map(({ img, title, course, color }, index) => (
-            <div key={index} className="group hover:-translate-y-2 transition-all car py-10 px-7 min-w-[calc(100%/6)] shadow-md rounded-md bg-white flex flex-col items-center gap-3">
+            <div key={index} className="group hover:-translate-y-2 transition-all car py-10 px-7 max-w-[calc(100%/6)] 
+            shadow-[0_0_10px_#8787871a] rounded-md bg-white flex flex-col items-center gap-3">
               <img src={`/images/category/icon/${img}`} alt="" />
-              <div className="title font-semibold text-center capitalize group-hover:text-[#F16126] transition-all">{title}</div>
+              <div className="title font-medium text-lg text-center capitalize group-hover:text-[#F16126] transition-all">{title}</div>
               <div className={`desc font-semibold`} style={{
                 color: color
               }}>{course < 10 ? "0" + course : course} Course
@@ -50,7 +54,10 @@ const PopularCategory = () => {
             </div>
           ))}
         </div>
-      </div>
+        <button className="browse-categories py-2.5 px-6 bg-[#F16126] text-white font-semibold rounded-sm place-self-center block mt-12 hover:-translate-y-1 hover:shadow-lg shadow-[#F16126]">
+          Browse All Categories
+        </button>
+      </Container>
     </div>
   )
 }

@@ -4,3 +4,17 @@ body {
   background-color: #FAFAF2;
   font-family: "barlow"
 }
+
+@theme {
+  --animate-slow-spin: slow-spin 90s linear infinite;
+
+  @keyframes slow-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
