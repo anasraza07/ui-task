@@ -7,7 +7,7 @@ import NavSections from "./NavSections";
 import { useEffect, useState } from "react";
 import Container from "./Container";
 
-const Header = () => {
+const   Header = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
 
   useEffect(() => {

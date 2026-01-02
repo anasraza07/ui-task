@@ -7,6 +7,7 @@ body {
 
 @theme {
   --animate-slow-spin: slow-spin 90s linear infinite;
+  --animate-video-play: video-play 1s linear infinite;
 
   @keyframes slow-spin {
     0% {
@@ -15,6 +16,23 @@ body {
 
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+  @keyframes video-play {
+    0% {
+      opacity: .5;
+      transform: scale(1)
+    }
+
+    80% {
+      opacity: 0;
+      transform: scale(1.5)
+    }
+    
+    100% {
+      opacity: 0;
+      transform: scale(2.5)
     }
   }
 }

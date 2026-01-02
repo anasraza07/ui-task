@@ -1,4 +1,5 @@
 import Container from "./Container"
+import SectionTitle from "./SectionTitle"
 import Subtitle from "./Subtitle"
 
 const PopularCategory = () => {
@@ -35,19 +36,19 @@ const PopularCategory = () => {
   },]
 
   return (
-    <div className="categoory-section py-28 bg-white">
+    <div className="categoory-section py-17.5 lg:py-28 bg-white">
       <Container>
-        <div className="header-content mb-12">
+        <div className="header-content mb-12.5">
           <Subtitle text="Popular Category" className="text-center" />
-          <h2 className="text-center text-[40px] font-bold my-4">Popular Category For Learn</h2>
+          <SectionTitle text="Popular Category For Learn" />
         </div>
-        <div className="cards flex wrap gap-2">
+        <div className="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2">
           {categories.map(({ img, title, course, color }, index) => (
-            <div key={index} className="group hover:-translate-y-2 transition-all car py-10 px-7 max-w-[calc(100%/6)] 
-            shadow-[0_0_10px_#8787871a] rounded-md bg-white flex flex-col items-center gap-3">
+            <div key={index} className="group hover:-translate-y-2 transition-all car py-10 px-7 w-full 
+            shadow-[0_0_10px_#8787871a] rounded-md bg-white flex flex-col items-center gap-2">
               <img src={`/images/category/icon/${img}`} alt="" />
               <div className="title font-medium text-lg text-center capitalize group-hover:text-[#F16126] transition-all">{title}</div>
-              <div className={`desc font-semibold`} style={{
+              <div className={`desc text-lg`} style={{
                 color: color
               }}>{course < 10 ? "0" + course : course} Course
               </div>
