@@ -87,17 +87,15 @@ const Header = () => {
                         <span>{item}</span>
                         {item != "contact" && (
                           <>
-                            <span className="hidden lg:block">
+                            <span className="hidden lg:block relative">
                               <LuPlus className="transition-all duration-150 group-hover:opacity-0" />
-                              <LuMinus className="absolute right-6.25 lg:right-0 opacity-0 transition-all duration-150 group-hover:opacity-100" />
+                              <LuMinus className="absolute top-0 right-6.25 lg:right-0 opacity-0 transition-all duration-150 group-hover:opacity-100" />
                             </span>
 
                             <span className="lg:hidden">
                               {openSubMenu === item ? <LuMinus /> : <LuPlus />}
                             </span>
-
                           </>
-
                         )}
                       </a>
                       {item != "contact" && <NavSections item={item}
