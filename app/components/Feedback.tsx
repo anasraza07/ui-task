@@ -17,7 +17,7 @@ const Feedback = () => {
               <a href="" className="absolute top-1/2 left-1/2 -translate-1/2 transition-all hover:text-black text-[#f16126]">
                 <div className="relative w-15 sm:w-23 h-15 sm:h-23 text-2xl sm:text-3xl bg-white rounded-full place-content-center place-items-center">
                   <FaPlay />
-                  <span className="absolute w-full h-full bg-white top-0 left-0 rounded-full -z-10 animate-video-play"></span>
+                  <span className="absolute w-full h-full bg-white top-0 left-0 rounded-full -z-1 animate-video-play"></span>
                 </div>
               </a>
             </div>

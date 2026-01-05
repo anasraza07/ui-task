@@ -25,19 +25,21 @@ const sponsors = [{
 
 const SponserSlider = () => {
   return (
-    <div className="bg-[#FFF9F1] py-17.5 lg:py-28">
+    <div className="bg-[#FFF9F1] py-12.5">
       <Container>
         <Swiper slidesPerView={5} loop={true}
           autoplay={{
             delay: 3000,
             disableOnInteraction: false
-          }} 
-          modules={[Autoplay]} 
+          }}
+          spaceBetween={30}
+          modules={[Autoplay]}
           className="">
           {sponsors.map(({ img, name }, index) => (
-            <SwiperSlide className="min-w-[calc(100%/5)]" key={index}>
+            <SwiperSlide className="select-none"
+              key={index}>
               <img src={`/images/sponser/${img}.png`}
-                alt={name} className="w-full"/>
+                alt={name} className="w-full" />
             </SwiperSlide>
           ))}
         </Swiper>
