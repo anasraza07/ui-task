@@ -1,6 +1,6 @@
-import Container from "./Container";
-import Subtitle from "./Subtitle";
-import SectionTitle from "./SectionTitle";
+import Container from "./common/Container";
+import Subtitle from "./common/Subtitle";
+import SectionTitle from "./common/SectionTitle";
 import { FaUser } from "react-icons/fa";
 import { FaArrowUpRightFromSquare, FaRegCalendarDays } from "react-icons/fa6";
 import { MdMessage, MdOutlineMessage } from "react-icons/md";

@@ -1,5 +1,5 @@
 import { IoSearchOutline } from "react-icons/io5"
-import Container from "./Container"
+import Container from "./common/Container"
 
 const HeroSection = () => {
   return (
@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="flex flex-col xl:flex-row relative">
           <div className="content">
             <h2 className="sub-heading text-[#F16126] uppercase font-semibold tracking-[5px] text-lg mb-2">Online education</h2>
-            <h1 className="text-2xl lg:text-[66px] font-bold mb-3.75 leading-[1.1]">
+            <h1 className="text-2xl sm:text-[40px] lg:text-[66px] font-bold mb-3.75 leading-[1.1]">
               <span className="lg:block">Learn The </span> Skills You Need <span className="lg:block">To Succeed</span>
             </h1>
             <p className="text-[#555555] text-lg lg:text-[20px] max-w-lg mb-6.25">Free online courses from the world's Leading experts. join 18+ million Learners today.</p>
@@ -38,8 +38,8 @@ const HeroSection = () => {
           </div>
 
           <div className="image w-full mt-7.5 lg:mt-0 md:w-[50%]">
-              <img src="/images/banner/01.png" alt="banner img" className="w-full relative z-10" />
-            </div>
+            <img src="/images/banner/01.png" alt="banner img" className="w-full relative z-10" />
+          </div>
 
           <div className="hidden xl:block round-shape rounded-full w-175 h-175 border border-dashed border-[#ff70d2] absolute top-0 -right-20 p-14 animate-slow-spin">
             <div className="round-shape rounded-full w-full h-full border border-dashed border-[#8b74ff] p-14">

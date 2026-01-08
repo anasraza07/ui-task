@@ -1,5 +1,5 @@
 "use client"
-import Header from "./components/Header";
+import Header from "./components/header/Header";
 import HeroSection from "./components/HeroSection";
 import SponserSlider from "./components/SponserSlider";
 import PopularCategory from "./components/PopularCategory";
@@ -9,7 +9,7 @@ import Instructors from "./components/Instructors";
 import Feedback from "./components/Feedback";
 import Blogs from "./components/Blogs";
 import Achievements from "./components/Achievements";
-import Container from "./components/Container";
+import Container from "./components/common/Container";
 import { BiLogoTelegram } from "react-icons/bi";
 
 

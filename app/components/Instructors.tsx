@@ -1,8 +1,8 @@
 import { ImBook } from 'react-icons/im';
-import Container from './Container'
-import Subtitle from './Subtitle'
+import Container from './common/Container'
+import Subtitle from './common/Subtitle'
 import { FaUsers } from 'react-icons/fa';
-import SectionTitle from './SectionTitle';
+import SectionTitle from './common/SectionTitle';
 
 const instructors = [{
   img: "01",

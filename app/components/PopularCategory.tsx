@@ -1,6 +1,6 @@
-import Container from "./Container"
-import SectionTitle from "./SectionTitle"
-import Subtitle from "./Subtitle"
+import Container from "./common/Container"
+import SectionTitle from "./common/SectionTitle"
+import Subtitle from "./common/Subtitle"
 
 const PopularCategory = () => {
   const categories = [{

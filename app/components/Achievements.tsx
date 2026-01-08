@@ -1,6 +1,6 @@
-import Subtitle from "./Subtitle";
-import SectionTitle from "./SectionTitle";
-import Container from "./Container";
+import Subtitle from "./common/Subtitle";
+import SectionTitle from "./common/SectionTitle";
+import Container from "./common/Container";
 
 const Achievements = () => {
   return (

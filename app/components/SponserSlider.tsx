@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import Container from "./Container";
+import Container from "./common/Container";
 
 const sponsors = [{
   img: "01",
@@ -32,7 +32,7 @@ const SponserSlider = () => {
             delay: 3000,
             disableOnInteraction: false
           }}
-          spaceBetween={30}
+          spaceBetween={50}
           modules={[Autoplay]}
           className="">
           {sponsors.map(({ img, name }, index) => (

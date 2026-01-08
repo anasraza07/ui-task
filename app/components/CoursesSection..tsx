@@ -1,9 +1,9 @@
 import { TfiVideoClapper } from "react-icons/tfi";
 import { BiSignal4 } from "react-icons/bi";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import Subtitle from "./Subtitle";
-import Container from "./Container";
-import SectionTitle from "./SectionTitle";
+import Subtitle from "./common/Subtitle";
+import Container from "./common/Container";
+import SectionTitle from "./common/SectionTitle";
 
 const CoursesSection = () => {
   return (
@@ -11,7 +11,7 @@ const CoursesSection = () => {
       <Container>
         <div className="header-content mb-12.5">
           <Subtitle text="Featured Courses" />
-          <SectionTitle text="Pick A Course To Get Started"/>
+          <SectionTitle text="Pick A Course To Get Started" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
           {[1, 2, 3, 4, 5, 6].map((item, index) => (

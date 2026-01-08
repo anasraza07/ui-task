@@ -1,5 +1,5 @@
-import Subtitle from "./Subtitle";
-import Container from "./Container";
+import Subtitle from "./common/Subtitle";
+import Container from "./common/Container";
 import { FaPlay } from "react-icons/fa";
 
 const Feedback = () => {
